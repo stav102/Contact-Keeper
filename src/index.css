@@ -1,0 +1,74 @@
+input, button, label {
+    margin-top: 10px;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#tableForm {
+    background-color: rgb(239, 241, 255); /* צבע רקע בהיר ורגוע */
+    margin: 20px auto; /* ממרכז את הטבלה ומרווח מסביבה */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* מוסיף צל לבלוק כדי לתת עומק */
+    border-radius: 8px; /* פינות מעוגלות למראה מודרני */
+    max-width: 100%; /* מגביל את רוחב הטבלה לא להתפשט יותר מדי */
+    border: 1px solid #ccc; /* מסגרת דקה להגדרה נקיה יותר של הבלוק */
+}
+table {
+    width: 100%; /* הטבלה תמלא את כל רוחב הבלוק שלה */
+    border-collapse: collapse; /* מסיר רווחים בין התאים */
+    font-family: Arial, sans-serif; /* סוג פונט נקי וקריא */
+}
+th, td {
+    text-align: left; /* יישור טקסט לשמאל */
+    padding: 20px; /* ריווח בתוך כל תא */
+    border-bottom: 1px solid #ddd; /* קו תחתון בכל שורה להפרדה נקיה */
+}
+
+th {
+    background-color: #f2f2f2; /* רקע שונה לשורת הכותרת */
+    color: #333; /* צבע טקסט כהה לניגודיות */
+}
+
+tr:hover {
+    background-color: #f5f5f5; /* רקע בהיר יותר כאשר מרחפים מעל שורה */
+}
+
+
+#h2Title {
+    font-size: 30px; /* גודל הפונט של הכותרת */
+    color: #333; /* צבע הטקסט */
+    text-align: center; /* מיישר את הטקסט למרכז */
+    font-family: 'Arial', sans-serif; /* סוג הפונט */
+    margin-top: 20px; /* מרווח מעל הכותרת */
+    margin-bottom: 20px; /* מרווח מתחת לכותרת */
+    padding-bottom: 10px; /* ריווח בתחתית הכותרת */
+    border-bottom: 2px solid #4CAF50; /* קו מתחת לכותרת בצבע ירוק */
+}
+
+h2::after {
+    content: ""; /* מוסיף תוכן ריק אחרי הכותרת */
+    display: block; /* הופך את התוכן לבלוק */
+    width: 50px; /* רוחב הבלוק */
+    height: 2px; /* גובה הבלוק */
+    margin: 10px auto; /* ממרכז את הבלוק ומציב מרווחים */
+}
+
+#btnCreate {
+        display: block;        /* הופך את הכפתור לבלוק, מה שמאפשר לו לתפוס שורה שלמה */
+        margin: 20px auto;     /* ממרכז את הכפתור באמצע הדף על ידי הגדרת שוליים אוטומטיים */
+        padding: 10px 20px;    /* קובע את גודל הריווח בפנים הכפתור */
+        font-size: 16px;       /* קובע את גודל הטקסט בכפתור */
+        background-color: #78729f; /* קובע את צבע הרקע של הכפתור */
+        color: white;          /* קובע את צבע הטקסט שבכפתור */
+        border: none;          /* הסרת גבולות הכפתור */
+        border-radius: 5px;    /* מעגל את פינות הכפתור */
+        cursor: pointer;       /* משנה את הסמן לסמן יד כאשר מצביעים על הכפתור */
+        transition: background-color 0.3s; /* מוסיף אנימציה עדינה בשינוי צבע הרקע */
+    }
+    
+    #btnCreate:hover {
+        background-color: #45a049; /* משנה את צבע הרקע של הכפתור כאשר מעבירים עליו את העכבר */
+    }
+    
